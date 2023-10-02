@@ -21,3 +21,7 @@ Sistema responsável por tratar os documentos e atualizar o banco de dados com e
 
 ### Banco de dados
 Responsável por armazenar todos os documentos coletados, utilizado posteriormente pelo backend para treinar o modelo e para aperfeiçoar o sistema conversacional.
+
+
+## Conclusão
+Com esse sistema de aprendizado contínuo somos capazes de aperfeiçoar a interação do usuário com o sistema conversacional, de forma que modelo é atualizado conforme os usuários fazem perguntas, de acordo com o avanço dos dados disponibilizados digitalmente.
