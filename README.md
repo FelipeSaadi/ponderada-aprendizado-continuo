@@ -8,7 +8,7 @@ Um sistema de coleta e atualização de dados capaz de identificar quando uma bu
 ![image](https://github.com/FelipeSaadi/ponderada-aprendizado-continuo/assets/54749257/03c9b48d-5cff-4cb1-90ab-c9935e76c69c)
 
 ###  Evento de falta de respostas
-Evento acionado diariamente pelo backend da solução, responsável por enviar todas as palavras chaves que não houveram respostas relevantes no dia em questão para o orquestrador de coleta de novos dados.
+Evento acionado diariamente pelo backend da solução, responsável por enviar todas as palavras chaves que não houveram respostas relevantes no dia ou que não tem respostas atualizadas a muito tempo, para o orquestrador de coleta de novos dados.
 
 ### Orquestrador de coleta dados
 Uma fila de execução responsável por orquestrar as coletas de dados do sistema, invoca a API de Web Scraping e encaminha os documentos recebidos para a API de NLP.
@@ -25,3 +25,4 @@ Responsável por armazenar todos os documentos coletados, utilizado posteriormen
 
 ## Conclusão
 Com esse sistema de aprendizado contínuo somos capazes de aperfeiçoar a interação do usuário com o sistema conversacional, de forma que modelo é atualizado conforme os usuários fazem perguntas, de acordo com o avanço dos dados disponibilizados digitalmente.
+Todo dia que um usuário faz uma pergunta que não há respostas, o sistema é capaz de salvar essa informação e posteriormente buscar novos dados, além disso, o sistema é capaz de identificar os dados que estão desatualizados a muitos dias, criando assim uma base de dados ainda mais robusta e atualizada. Com essa solução é possível resolver o principal problema de sistemas conversacionais dos dias de hoje, a falta de informações atualizadas e relevantes para o usuário.
