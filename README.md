@@ -1,1 +1,23 @@
-# ponderada-aprendizado-continuo
+## Introdução
+Em soluções de sistemas conversacionais inteligentes, é importante que o sistema tenha capacidade de aprender continuamente, permitindo que os usuários tenham sempre informações atualizadas e que agreguem valor para eles, principalmente na velocidade em que as informações mudam nos dias de hoje.
+
+## Solução Proposta
+Um sistema de coleta e atualização de dados capaz de identificar quando uma busca validada no sistema conversacional não teve uma resposta adequada com base na coleta feita previamente, utilizando como base o Concept Drift. Esse sistema será responsável por identificar as necessidades de atualização dos dados e rodar um pipeline de coleta de novos dados utilizando de estratégias de web scraping.
+
+## Fluxo da solução
+![image](https://github.com/FelipeSaadi/ponderada-aprendizado-continuo/assets/54749257/03c9b48d-5cff-4cb1-90ab-c9935e76c69c)
+
+###  Evento de falta de respostas
+Evento acionado diariamente pelo backend da solução, responsável por enviar todas as palavras chaves que não houveram respostas relevantes no dia em questão para o orquestrador de coleta de novos dados.
+
+### Orquestrador de coleta dados
+Uma fila de execução responsável por orquestrar as coletas de dados do sistema, invoca a API de Web Scraping e encaminha os documentos recebidos para a API de NLP.
+
+### Web Scraping
+Sistema responsável por coletar novos dados e sites selecionados previamente (whitelist), ao receber novos textos, trata-os e os encaminha de volta para o osquestrador de coleta.
+
+### Sistema de NLP
+Sistema responsável por tratar os documentos e atualizar o banco de dados com eles, as palavras chaves são utilizadas para classificar os documentos.
+
+### Banco de dados
+Responsável por armazenar todos os documentos coletados, utilizado posteriormente pelo backend para treinar o modelo e para aperfeiçoar o sistema conversacional.
