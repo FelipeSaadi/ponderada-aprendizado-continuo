@@ -26,3 +26,12 @@ Responsável por armazenar todos os documentos coletados, utilizado posteriormen
 ## Conclusão
 Com esse sistema de aprendizado contínuo somos capazes de aperfeiçoar a interação do usuário com o sistema conversacional, de forma que o modelo é atualizado conforme os usuários fazem perguntas, de acordo com o avanço dos dados disponibilizados digitalmente.
 Todo dia que um usuário faz uma pergunta que não há respostas, o sistema é capaz de salvar essa informação e posteriormente buscar novos dados, além disso, o sistema é capaz de identificar os dados que estão desatualizados a muitos dias, criando assim uma base de dados ainda mais robusta e atualizada. Nota-se que essa solução é capaz resolver o principal problema de sistemas conversacionais dos dias de hoje: a falta de informações atualizadas e relevantes para os usuários ao longo do tempo.
+
+## Referências
+PAULO BARROS. Gerando manuscritos acadêmicos com referências utilizando Rmarkdown. Disponível em: <https://paulobarros.com.br/posts/2021-07-15_manuscritos_cientificos_rmarkdown/pt>.
+
+A. S. Iwashita and J. P. Papa. An Overview on Concept Drift Learning. Disponível em: <https://ieeexplore.ieee.org/document/8571222>.
+
+Harshita Agarwala, Robin Becker, Mehnoor Fatima, Lucian Riediger. Development of an Artificial Conversation Entity 
+for continuous learning and adaptation to user’s preferences 
+and behavior. Disponível em <https://www.mdsi.tum.de/fileadmin/w00cet/di-lab/pdf/Horvath_Slides_Final_Presentation_WS18.pdf>.
